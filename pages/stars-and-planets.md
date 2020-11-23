@@ -20,7 +20,7 @@ Use headers and subheaders to structure your text, along with lists, blockquotes
 
 You can drop images, diagrams, or illustrations anywhere in your content. Images are automatically set to 100% width and centered with a subtle border hover. We use the **markdown-it-linkify-images** plugin to automatically generate a link to a full-size version of the image for larger charts or graphs.
 
-![Sagan](/static/img/sagan.jpg)
+![Sagan](https://res.cloudinary.com/broeker/image/upload/w_1000,c_scale/v1606111412/sagan_tczrlj.jpg)
 
 _Carl Sagan, 1987_
 
