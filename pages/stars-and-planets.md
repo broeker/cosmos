@@ -73,11 +73,11 @@ Gathered by gravity Flatland across the centuries made in the interiors of colla
 
 > The cosmos (UK: /ˈkɒzmɒs/, US: /-moʊs/) is the Universe. Using the word cosmos rather than the word universe implies viewing the universe as a complex and orderly system or entity; the opposite of chaos.
 
-## Embed all the things
+<!-- ## Embed all the things
 
 You can easily embed Youtube videos, Tweets, and any other embeddable content. Use these judiciously; even this tiny Youtube embed has a notable effect on page performance scores:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MrZ4197C1I0?start=10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MrZ4197C1I0?start=10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 ## Custom callouts
 
