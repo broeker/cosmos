@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+section: post
+---
+<div class="flex justify-end mr-4 mb-4">
+    <div class="inline-block w-auto text-xs bg-gray-100 pt-1 pr-3 pb-1 pl-3 rounded ">Updated: <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time></div>
+        {% if metadata.edit_button == true %}
+            <div class="inline-block w-auto text-xs bg-gray-100 hover:bg-gray-300 ml-2 pt-1 pr-3 pb-1 pl-3 rounded "><a href="https://github.com/broeker/microsite/edit/master/{{ page.inputPath }}">Edit</a></div>
+        {% endif %}
+</div>
+
+<div class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl  pl-4 pr-4">
+    <h1>{{ title }}</h1>
+    <div class="adjust">
+    <article>
+    {{ layoutContent | safe }}
+    </article>
+    {% if tags %}
+    <p>
+    {% for tag in tags %}
+      {%- if tag != "post" -%}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <div class="tag inline-block w-auto text-xs bg-blue-100 hover:bg-gray-300 mr-2 pt-1 pr-3 pb-1 pl-3 rounded ">
+        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+        </div>
+      {%- endif -%}
+    {% endfor %}
+    </p>
+  {% endif %}
+
+
+
+<nav>
+  <a href="{{ '/blog/' | url }}">← Blog index</a>
+</nav>
+    </div>
+</div>
+
+  

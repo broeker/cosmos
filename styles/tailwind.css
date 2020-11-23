@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  blockquote {
+    @apply rounded p-4 bg-gray-100;
+
+  }
+
+  a.edit  {
+    color: "pink";
+  }
+
+  .callout {
+    @apply p-4 rounded-lg bg-pink-100;
+  }
+
+  img {
+    @apply: max-w-sm;
+  }
+
+  ul.contains-task-list,
+  .prose ul.contains-task-list,
+  .prose-xl ul.contains-task-list,
+  .prose-lg ul.contains-task-list,
+  .prose-sm ul.contains-task-list {
+    @apply list-none !important;
+    @apply -ml-12 !important;
+  }
+
+
+}

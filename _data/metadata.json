@@ -1,0 +1,9 @@
+{
+  "title": "Cosmos",
+  "subtitle": "A simple site generator based on Eleventy, Tailwind 2.0, and Alpine.js",
+  "emoji": "️💥",
+  "footer": "Made with ❤️️ in Minneapolis",
+  "description": "",
+  "edit_button": 1,
+  "url": "https://cosmos.netlify.app"
+}

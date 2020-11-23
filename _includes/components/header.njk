@@ -1,0 +1,20 @@
+<div class="top-0 bg-scroll left-0 m-0 fixed w-full z-10 mx-auto" x-data="{ atTop: true}" x-on:scroll.window="atTop = (window.pageYOffset > 0) ? false : true"> 
+    <div class="mx-auto max-w-screen-lg">  
+      <div class="text-gray-800  font-bold text-3xl pl-4 mt-4 "
+         x-bind:class="{'transition  hidden' : !atTop}"
+        >
+        <a href="/"><span class="text-md" x-data="{message:'{{ metadata.emoji }}'}" x-text="message"></span></a>
+         <a href="/">{{ metadata.title }}</a>
+        </div>
+        <div class="text-gray-700  text-md pl-4 pb-4"
+          x-bind:class="{'transition  hidden' : !atTop}"
+        >{{ metadata.subtitle }}</div> 
+        {% include "components/nav.njk" %}
+      </div>
+ </div>
+
+
+      
+
+
+       
