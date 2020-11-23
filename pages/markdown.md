@@ -9,6 +9,11 @@ eleventyNavigation:
 ---
 This page shows the available Markdown-it formatters available to you with examples. For a few more bits of syntax or plugins that are not covered here see the [markdown-it demo](https://markdown-it.github.io/).
 
+::: warning
+**Pro tip:** you can remove this file from your navigation, but keep it around for reference. 
+:::
+
+
 # h1 Heading 8-)
 ## h2 Heading
 ### h3 Heading
@@ -29,7 +34,7 @@ Generally, you should reserve the h1 heading for your primary page title, and th
 
 ## Test copy
 
-At Cosmo, we have come to know how to incentivize super-intuitively. We constantly grow e-business e-markets. That is a terrific achievement when you consider the current fiscal year's cycle! Think mega-cyber-co-branded. Without channels, you will lack C2C management. Quick: do you have a co-branded plan for managing unplanned-for biometrics? Do you have a scheme to become turn-key? The metrics for infrastructures are more well-understood if they are not killer. 
+Culture quasar Sea of Tranquility Drake Equation hundreds of thousands preserve and cherish that pale blue dot. With pretty stories for which there's little good evidence as a patch of light realm of the galaxies cosmic ocean extraordinary claims require extraordinary evidence the ash of stellar alchemy. Hydrogen atoms descended from astronomers rich in mystery Orion's sword hydrogen atoms descended from astronomers.  
 
 ```
 ## Test copy

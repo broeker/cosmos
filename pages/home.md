@@ -20,42 +20,110 @@ Cosmos is starter project you can use to spin up a simple website exactly like t
 
 Cosmos is named in honor of the great communicator [Carl Sagan](https://en.wikipedia.org/wiki/Carl_Sagan) and his ability to explain complex ideas and complicated scenarios like the _entire universe_ with simple words and illustrations. You can use Cosmos for documentation sites, developer blogs, to sketch out new ideas, or for whatever suits your fancy.  
 
+---
+
 ##  “Out of chaos, find simplicity.” -- Bruce Lee 🥋 
 
-Cosmos was inspired by my search for the simplest possible way to stand up the simplest possible website in the least amount of time, with the freedom to extend as needed, zero cost, no maintenance burden, and virtually zero effort. Here is where I landed: 
+Cosmos was inspired by my search of the modern web for the simplest possible way to stand up the simplest possible website in the least amount of time, with the freedom to extend as needed, zero cost, no maintenance burden, and virtually zero effort. Here is where I landed: 
 
-* [Eleventy](https://www.11ty.io) for a super fast Node-based static site generator that stays out of your way and lets you ship only what you want to ship 🚀
-* [Tailwind 2.0](https://tailwindcss.com/) for a brilliant and tiny utility-first CSS framework. Cosmos (along with sites much more complicated than this one) was created without a single line of CSS  🎨
+* [Eleventy](https://www.11ty.io) for a super fast Node-based static site generator that stays out of your way and lets you ship only what you want to ship. It is really kind of great 🚀
+* [Tailwind 2.0](https://tailwindcss.com/) for a brilliant and tiny utility-first CSS framework. The more projects I build with Tailwind the better it gets.  🎨
 * [Alpine.js](https://github.com/alpinejs/alpine) a minimal framework for simple or advanced JavaScript. It is the Tailwind of JavaScript with a utility-based approach requiring zero lines of Javascript. 🕹️
-* [Netlify](https://www.netlify.com/) for one-click installs, free hosting, and a [Github](https://github.com/) deployment pipepline 🤖
+* [Netlify](https://www.netlify.com/) for one-click installs, easy form support, free hosting, and an automated [Github](https://github.com/) deployment pipepline 🤖
 * [Netlify CMS](https://www.netlify.com/) (optional) to provide an easy Markdown editor for creating and changing content 💻
 
 Cosmos was built to satisfy a very particular desire for creating simple, notebook-like websites at the click of a button. If you wish, you may customize Cosmos or use it as the basis for your creating your own starter. There are also dozens of other [Eleventy starters](https://www.11ty.dev/docs/starter/) that may better meet your specific needs or tastes. 
 
-## Want to get started?
+--- 
 
+## Want to get started? 🙋 Deploy a new Cosmos site now!
+
+Clone your own copy of Cosmos and deploy it to Netlify with the click of a button. You'll need an existing [Github account](https://github.com/) and a [Netlify account](https://www.netlify.com/) (which you  can create during this process if you wish):
+
+<div class="flex width-full  justify-center">
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/cosmos"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+</div>
 
+#### Wait, what happens if I click that button?? 🤔
+
+* Netlify will ask for permission to connect to your Github account, and then clone this git repository to your account (you can name your repository whatever you wish)
+* Once connected, Netlify robots will spin up a new site configured to use your new repository
+* You can immediately deploy changes simply by pushing to your repository
+* Easy as pie 
+
+## Whoa, slow down Tex 🐌 🤠
+
+If you'd prefer to try this out locally first, you can do that also. These are also the same steps you'll use to work locally if you chose the option above.
+
+### Step one 
+
+Grab a copy of the code by cloning the Cosmos repository:
+
+```
+git clone https://github.com/broeker/cosmos
+```
+
+### Step two
+
+Install the site and run and initial build command:
+
+```
+cd cosmos
+
+npm install (only necessary the first time!)
+
+npn run build (only necessary the first time!)
+```
+
+### Step three
+
+Now spin up your local server to see your site!
+
+```
+npm run start
+```
+
+and you are off the races. If you like what you see you'll want to fork this into your own repository. You can easily set up a new Netlify site manually simpy by pointing it at your repository. 🏇
+
+## Requirements
+
+You must be running version 12 or higher of Node due to the new Tailwind release. I recommend using NVM to easily manage your Node versions if you need to switch back and forth between older versions. 
+
+* [Node and NPM](https://nodejs.org/)
+* [NVM](https://github.com/nvm-sh/nvm) (optional)
+
+#### To find your current node version:
+
+```
+node --version
+```
 
 ## Coming someday ⛅
 
-* Better image handling
 * More advanced code blocks with syntax highlighting
 * Dark mode support (via Tailwind 2.0)
-* A bit more use of Alpine.js
-* e.g. smooth scroll to top, smoother header animation
-* Better support for nested pages/hierarchical menus
+* A bit more use of Alpine.js e.g. smooth scroll to #top, smoother header animation
+* Better support for nested pages/hierarchical menus [See examples] (https://github.com/shanerobinson/demo-11ty-prev-next)
+* Lightweight search 
+* Netlify serverless function support
+✨✨✨
 
-This is a running list of features I'd like to add someday...✨
+## Caveats/TODOs
 
+Netlify CMS is fully integrated and working, but not documented. Coming soon!
 
 ## Credits
 
-Recently I was working on a complex technical discovery project, and was seeking a way to replace a jumbled mess of Google docs, Basecamp posts, wireframes, diagrams, and other content into a simple website. After all, the web was literally invented as a method to explain ideas and share complicated documents across a network of 17,000 scientists in more than 100 countries. 
+Recently I was seeking a way to replace a jumbled mess of Google docs, Basecamp posts, wireframes, diagrams, and other content into a simple website. Cosmos is based on my experience researching more than a dozen existing starter kits to become familiar with Eleventy and to discover any common best practices and techniques. The following were especially valuable in my learning journey:
 
-Cosmos is based on my experience researching more than a dozen existing starter kits to become familiar with Eleventy and to discover any common best practices and techniques. The following were especially valuable in my learning journey:
-
-* [Eleventy-Tailwind-AlpineJS Starter](https://github.com/gregwolanski/eleventy-tailwindcss-alpinejs-starter) by Greg Wolanski
 * [Eleventy Netlify Boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate) by Dan Urbanowicz
+* [Eleventy-Tailwind-AlpineJS Starter](https://github.com/gregwolanski/eleventy-tailwindcss-alpinejs-starter) by Greg Wolanski
+* [Eleventy  One](https://github.com/philhawksworth/eleventyone) by Phil Hacksworth
 
-Many starter kits are much more ambitious than this one, which is designed to be as simple and lightweight as possible while still allowing for some more fancy features in the future (Alpine.js) and providing an easy way for non-technical users to create and edit content (Netlify CMS). My thanks to Zach Leatherman and the Eleventy community for this platform and its wide variety of applications. Onward!
+There is no one "right way" to build an Eleventy site an this is just one small attempt.
+
+Many starter kits are much more ambitious than this one, which is designed to be as simple and lightweight as possible while still allowing for some more features in the future (Alpine.js), an easy path toward a more advance design if desired (Tailwind), and an easy way for non-technical users to create and edit content (Netlify CMS). 
+
+---
+
+My thanks to Zach Leatherman and the Eleventy community for this platform and its wide variety of applications. Onward!
