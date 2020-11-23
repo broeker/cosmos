@@ -10,4 +10,10 @@ Cosmos is a simple starter kit based on [Eleventy](https://www.11ty.io) that all
 * **Markdown and Emoji friendly** 🦔 -- support for footnotes, custom containers, anchors, and emoji!
 * **Flexible** 💪 -- disable features you don't need (like contact forms or blogs), or add new features like Netlify serverless functions
 
-You can use Cosmos for simple documentation sites, developer blogs, to sketch out a new idea, or for whatever suits your fancy. Cosmos is named in honor of the great communicator [Carl Sagan](https://en.wikipedia.org/wiki/Carl_Sagan) and his ability to explain complex ideas clearly through words and illustrations. 
+You can use Cosmos for simple documentation sites, developer blogs, to sketch out a new idea, or for whatever suits your fancy. Cosmos is named in honor of the great communicator [Carl Sagan](https://en.wikipedia.org/wiki/Carl_Sagan) and his ability to explain complex ideas clearly through words and illustrations.
+
+* Enable Identity in Netlify site dashboard -- Site settings > Identity
+
+* Site settings > Identity : External providers > Add providers (Github/Google) with default settings 
+
+* Site settings > Identity : Git Gateway > Enable
