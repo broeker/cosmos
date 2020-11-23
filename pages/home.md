@@ -32,6 +32,11 @@ Cosmos was inspired by my search for the simplest possible way to stand up the s
 
 Cosmos was built to satisfy a very particular desire for creating simple, notebook-like websites at the click of a button. If you wish, you may customize Cosmos or use it as the basis for your creating your own starter. There are also dozens of other [Eleventy starters](https://www.11ty.dev/docs/starter/) that may better meet your specific needs or tastes. 
 
+## Want to get started?
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/cosmos"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+
+
 ## Coming someday ⛅
 
 * Better image handling
