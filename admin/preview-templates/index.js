@@ -5,7 +5,7 @@ import Page from "/admin/preview-templates/page.js";
 CMS.registerPreviewTemplate("blog", Post);
 CMS.registerPreviewTemplate("pages", Page);
 
-CMS.registerPreviewStyle("https://cosmos11ty.netlify.app/style.css");
+CMS.registerPreviewStyle("/style.css");
 
 // Register any CSS file on the home page as a preview style
 // fetch("/")
