@@ -44,7 +44,7 @@ Clone your own copy of Cosmos and deploy it to Netlify with the click of a butto
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/cosmos"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 </div>
 
-#### Wait, what happens if I click that button?? 🤔
+### Wait, what happens if I click that button?? 🤔
 
 * Netlify will ask for permission to connect to your Github account, and then clone this git repository to your account (you can name your repository whatever you wish)
 * Once connected, Netlify robots will spin up a new site configured to use your new repository
