@@ -7,6 +7,15 @@ backend:
 
 media_folder: "static/img" # Media files will be stored in the repo under images/uploads
 
+# Cloudinary
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: broeker
+    api_key: 159818251742281
+
+
 collections:
   # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
