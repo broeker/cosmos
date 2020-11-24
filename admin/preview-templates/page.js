@@ -8,11 +8,10 @@ const Page = createClass({
     const entry = this.props.entry;
 
     return html`
-      <main class="prose">
+      <main class="prose p-4">
         <h1>${entry.getIn(["data", "title"], null)}</h1>
         <div class="adjust">
         ${this.props.widgetFor("body")}
-        </div>
       </main>
     `;
   }
