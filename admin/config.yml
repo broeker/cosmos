@@ -53,7 +53,7 @@ collections:
       - label: "Site Data"
         name: "site_data"
         delete: false
-        file: "src/_data/site.json"
+        file: "_data/site.json"
         fields:
           - {label: "Site Name", name: "name", widget: "string"}
           - {label: "Site Url", name: "url", widget: "string"}
@@ -69,7 +69,7 @@ collections:
       - label: "Navigation"
         name: "nav"
         delete: false
-        file: "src/_data/navigation.json"
+        file: "_data/navigation.json"
         fields:
           - label: "Items"
             name: "items"
@@ -81,7 +81,7 @@ collections:
       - label: "Theme Settings"
         name: "theme"
         delete: false
-        file: "src/_data/tokens.json"
+        file: "_data/tokens.json"
         fields:
           - label: "Size Scale"
             name: "size-scale"
