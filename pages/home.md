@@ -1,7 +1,7 @@
 ---
 layout: layouts/home.njk
 title: Meet Cosmos
-date: 2020-11-24T03:36:57.789Z
+date: 2020-11-24T03:42:36.256Z
 permalink: /
 eleventyNavigation:
   key: Home
