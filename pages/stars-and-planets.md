@@ -3,7 +3,7 @@ title: Stars and Planets
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
-date: 2017-01-01T00:00:00.000Z
+date: 2020-11-20
 permalink: /stars-and-planets/index.html
 eleventyNavigation:
   key: Stars and Planets 

@@ -1,6 +1,6 @@
 ---
 title: Markdown Examples
-date: 2020-11-15T08:56:36.283Z
+date: 2020-11-20
 permalink: /markdown/index.html
 eleventyNavigation:
   order: 10
