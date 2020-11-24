@@ -1,6 +1,6 @@
 ---
 title: Mountains are so simple, they're hard.
-date: 2020-11-24
+date: 2020-11-24T02:42:37.646Z
 author: Albert Einstein
 summary: Of course he's a happy little stone, cause we don't have any other
   kind. Learn when to stop. We'll throw some old gray clouds in here just
