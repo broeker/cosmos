@@ -25,8 +25,6 @@ const Post = createClass({
               ${" by Author"}
             </small>
           </p>
-
-          <p>${entry.getIn(["data", "summary"], "")}</p>
           <div class="adjust">
           ${this.props.widgetFor("body")}
           </div>
