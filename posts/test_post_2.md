@@ -1,10 +1,13 @@
 ---
 title: We'll put a happy little bush here
-date: 2020-02-03
-author: Carl Sagan 
-summary: A beautiful little sunset. Just let these leaves jump off the brush See there, told you that would be easy. Those great big fluffy clouds. Water's like me. It's laaazy ... Boy, it always looks for the easiest way to do things That's crazy. It takes dark in order to show light.
+date: 2020-11-24T01:25:40.126Z
+author: Carl Sagan
+summary: A beautiful little sunset. Just let these leaves jump off the brush See
+  there, told you that would be easy. Those great big fluffy clouds. Water's
+  like me. It's laaazy ... Boy, it always looks for the easiest way to do things
+  That's crazy. It takes dark in order to show light.
 tags:
-  - saturn 
+  - saturn
   - pluto
   - mars
 ---
