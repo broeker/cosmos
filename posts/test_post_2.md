@@ -13,7 +13,7 @@ tags:
 ---
 We're trying to teach you a technique here and how to use it. Only think about one thing at a time. Don't get greedy. With practice comes confidence. We can always carry this a step further. There's really no end to this. We don't really know where this goes - and I'm not sure we really care. You got your heavy coat out yet? It's getting colder. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. Now, we're going to fluff this cloud.
 
-![A sample inlined image](https://res.cloudinary.com/broeker/image/upload/v1606187988/samples/photo-1536697246787-1f7ae568d89a_rl2jkk.jpg)
+![A sample inlined image](https://res.cloudinary.com/broeker/image/upload/c_scale,w_656/v1606187988/samples/photo-1536697246787-1f7ae568d89a_rl2jkk.webp)
 
 We don't want to set these clouds on fire. We need a shadow side and a highlight side. The first step to doing anything is to believe you can do it. See it finished in your mind before you ever start.
 
