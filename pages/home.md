@@ -11,7 +11,7 @@ Cosmos is starter project you can use to spin up a simple website exactly like t
 
 * **Easy to use** 😀 -- drop in a new page and it appears magically in your navigation 
 * **Writing focused** 📔 -- clean pages, nice typograpy and a simple blog with tags and multiple authors
-* **Lightning fast and accessible** 🚀 -- static files, system fonts, minimal JavaScript, purge and minify All the Things, fully responsive, accesible to all
+* **Lightning fast and accessible** 🚀 -- static files, system fonts, minimal JavaScript, purge and minify All the Things, fully responsive, accessible to all
 * **Easy on the eyes** 👀 -- a minimalist design and beautiful typography that lets your content shine
 * **Markdown and Emoji friendly** 🦔 -- support for markdown footnotes, custom containers, anchors, and emoji!
 * **Flexible** 💪 -- disable features you don't need, add advanced features with serverless functions or Apline.js

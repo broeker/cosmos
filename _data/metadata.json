@@ -1,9 +1,11 @@
 {
   "title": "Cosmos",
   "subtitle": "A simple site generator based on Eleventy, Tailwind 2.0, and Alpine.js",
-  "emoji": "️💥",
+  "emoji": "️😂",
   "footer": "Made with ❤️️ in Minneapolis",
   "description": "A simple site generator based on Eleventy, Tailwind 2.0, and Alpine.js",
   "edit_button": 1,
-  "url": "https://cosmos11ty.netlify.app"
+  "url": "https://cosmos11ty.netlify.app/",
+  "branch": "main",
+  "repository": "https://github.com/broeker/cosmos/"
 }

@@ -3,9 +3,11 @@ const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const svgContents = require("eleventy-plugin-svg-contents");
+
 
 module.exports = function(eleventyConfig) {
-
+  eleventyConfig.addPlugin(svgContents); 
   eleventyConfig.addShortcode("version", function () {
     return String(Date.now());
   });
@@ -127,8 +129,6 @@ module.exports = function(eleventyConfig) {
       includeLevel: [2,3],
       listType: "ol"
     })
-
-
   );
 
 

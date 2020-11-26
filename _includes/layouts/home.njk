@@ -4,11 +4,12 @@ section: home
 ---
 <div class="flex justify-end mr-4">
     <div class="inline-block w-auto text-xs bg-gray-200 pt-1 pr-3 pb-1 pl-3 rounded ">Updated: <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time></div>
-        {% if metadata.edit_button == true %}
-            <div class="inline-block w-auto text-xs bg-gray-200 hover:bg-gray-300 ml-2 pt-1 pr-3 pb-1 pl-3 rounded "><a href="https://github.com/broeker/cosmos/edit/main/{{ page.inputPath }}">Edit</a></div>
-        {% endif %}
+    {% if metadata.edit_button == true %}
+        <div class="inline-block w-auto text-xs bg-gray-200 hover:bg-gray-300 ml-2 pt-1 pr-3 pb-1 pl-3 rounded "><a href="{{ metadata.repository }}/{{ metadata.branch }}/main/{{ page.inputPath }}">Edit</a></div></div>
+    {% endif %}
+<div class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl  pl-4 pr-4 mt-4">
+    <h1>{{ title }}</h1>
+    {{ layoutContent | safe }}
 </div>
-<div class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl  pl-4 pr-4">
-<h1>{{ title }}</h1>
-{{ layoutContent | safe }}
+
 </div>
