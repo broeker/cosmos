@@ -1,13 +1,10 @@
 {
-    "showThemeCredit": true,
-    "name": "Hylia Starter Kit",
-    "shortDesc": "Hylia is a lightweight Eleventy starter kit to help you to create your own blog or personal website.",
-    "url": "https://hylia.website",
-    "authorEmail": "me@andy-bell.design",
-    "authorHandle": "@hankchizljaw",
-    "authorName": "Andy Bell",
-    "enableThirdPartyComments": false,
-    "maxPostsPerPage": 5,
-    "paymentPointer": "$ilp.uphold.com/MggmnFEyQqhk",
+    "name": "Cosmos",
+    "subtitle": "A simple site generator based on Eleventy, Tailwind 2.0, and Alpine.js",
+    "description": "A simple site generator based on Eleventy, Tailwind 2.0, and Alpine.js",
+    "footer": "Made with ❤️️ in Minneapolis",
+    "emoji": "️💥",
+    "url": "https://cosmos11ty.netlify.app",
+    "edit_button": 1,
     "faviconPath": "/images/favicon.png"
   }
