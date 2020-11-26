@@ -63,7 +63,7 @@ git clone https://github.com/broeker/cosmos
 
 ### Step two
 
-Install the site and run and initial build command:
+Install the site and run an initial build command:
 
 ```
 cd cosmos
