@@ -7,7 +7,7 @@
     "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss styles/tailwind.css --o _site/style.css",
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=* npx eleventy",
-    "postinstall": "cd functions/staticman && npm install --production"
+    "postinstall": "cd functions/staticman && npm install"
   },
   "repository": {
     "type": "git",
