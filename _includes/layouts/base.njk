@@ -1,7 +1,11 @@
 <!doctype html>
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
   {% include "components/head.njk" %}
-  
+ <script>
+window.addEventListener('load', () =>{
+  quicklink.listen();
+});
+</script> 
   <body class="min-h-screen bg-gradient-to-b from-white via-gray-200 to-white">
    {% include "components/header.njk" %}
     <div class="container mb-12 mx-auto max-w-screen-lg">
