@@ -103,7 +103,7 @@ node --version
 
 * By default we use a robots.txt to prevent Google et al from crawling these sites
 * If you have a public site to share with the world, remove this file!
-
+* https://github.com/robinmoisson/staticrypt/issues/116
 ## Caveats/TODOs
 
 Netlify CMS is fully integrated and working, but not documented. Coming soon!
