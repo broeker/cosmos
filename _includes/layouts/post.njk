@@ -16,10 +16,10 @@ section: post
     {{ layoutContent | safe }}
     </article>
 
-    https://{YOUR SITE}/.netlify/functions/staticman/{GITHUB USERNAME}/{GITHUB REPOSITORY}/{BRANCH}/{PROPERTY}
+    {# https://{YOUR SITE}/.netlify/functions/staticman/{GITHUB USERNAME}/{GITHUB REPOSITORY}/{BRANCH}/{PROPERTY} #}
 
 <form method="POST" action="https://cosmos11ty.netlify.app/.netlify/functions/staticman/broeker/cosmos/main/comments">
-  <input name="options[redirect]" type="hidden" value="https://my-site.com">
+  <input name="options[redirect]" type="hidden" value="https://cosmos11ty.netlify.app/">
   <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <label><input name="fields[name]" type="text">Name</label>
