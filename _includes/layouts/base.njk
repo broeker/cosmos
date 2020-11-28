@@ -1,12 +1,7 @@
 <!doctype html>
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
   {% include "components/head.njk" %}
- <script>
-window.addEventListener('load', () =>{
-  quicklink.listen();
-  alert('i listen');
-});
-</script> 
+
   <body class="min-h-screen bg-gradient-to-b from-white via-gray-200 to-white">
    {% include "components/header.njk" %}
     <div class="container mb-12 mx-auto max-w-screen-lg">
@@ -15,6 +10,7 @@ window.addEventListener('load', () =>{
       </main>
       {% include "components/footer.njk" %}
      </div>
+     <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
   </body>
 </html>
 
