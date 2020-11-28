@@ -5,7 +5,7 @@ section: post
 <div class="flex justify-end mr-4 mb-4">
     <div class="inline-block w-auto text-xs bg-gray-100 pt-1 pr-3 pb-1 pl-3 rounded ">Updated: <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time></div>
         {% if metadata.edit_button == true %}
-            <div class="inline-block w-auto text-xs bg-gray-100 hover:bg-gray-300 ml-2 pt-1 pr-3 pb-1 pl-3 rounded "><a href="https://github.com/broeker/cosmos/edit/main/{{ page.inputPath }}">Edit</a></div>
+            <div class="inline-block w-auto text-xs bg-gray-100 hover:bg-gray-300 ml-2 pt-1 pr-3 pb-1 pl-3 rounded "><a href="{{ metadata.repository }}/{{ metadata.branch }}/{{ page.inputPath }}">Edit</a></div>
         {% endif %}
 </div>
 
