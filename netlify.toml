@@ -3,6 +3,10 @@
   command = "npm run build"
   functions = "functions"
 
+GITHUB_TOKEN=cb9f0d8ac14e1b5df7647f010073620bd18cb229
+RSA_PRIVATE_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSXx35BGlqw8suS6LsNE/aY1En84EwZlUsFNLV0Lab//OZljkRA8uWksLf8gUwf7k7NieLcnk8ip9L0sGuzFxakD5n4Y0iEjnYbNgTId1fP/UeIcYZFOC7QxXuer47Nu+qUnUrdZVmbY/AzB6u0zF0MwhUFRdz8vuQmfe8pVNBN1bfwQoXi+FdBT8WtEZcKVIBitDGlaMe+N7z5HC3UbJsNParcW8W1VsheicUEkwcyNJYuEDV3OBNUdhOB0IKG5oADqsglDFgwY2ZPYxFLMGMrXkjNe6HdJ2lc1br0YMXgYCuKJi36ilgu7RdGzc+BoozUiCjZU0SrTy01MR+PcMd broeker@scooter
+
+
 # REDIRECT and HEADERS examples
 
 # Redirect rule example
