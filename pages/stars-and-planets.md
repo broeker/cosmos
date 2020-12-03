@@ -1,5 +1,5 @@
 ---
-title: Stars and Planets
+title: Stars and Planets and all the great things
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
@@ -24,13 +24,16 @@ You can drop images, diagrams, or illustrations anywhere in your content. Images
 
 ![Sagan](https://res.cloudinary.com/broeker/image/upload/w_1000,c_scale/v1606111412/sagan_tczrlj.jpg)
 
-_Carl Sagan, 1987_
+->_Carl Sagan, 1987_<-
 
 ## Take charge of your images
 
 You are responsible for your image sizing and optimization, and should upload the smallest useful version of your image. If you want to add smaller images than the one above, resize to your desired dimensions and add it to the page:
 
 ![Astronaut](https://res.cloudinary.com/broeker/image/upload/w_300,c_scale/v1606078324/samples/photo-1454789548928-9efd52dc4031_e0fe5s.jpg)
+
+->_Astronaut_<-
+
 
 If you don't want to worry about image resizing or optimization, youu can use a [free Cloudinary account](https://cloudinary.com/) to handle your image sizing on the fly in the cloud and serve it from a global CDN such as this example above. Using this method, you can simply upload full res versions of your files to Cloudinary, and then serve them with your desired transformations.
 
@@ -49,7 +52,7 @@ Hundreds of thousands hearts of the stars bits of moving fluff dispassionate ext
 
 Here is an example code block of silly code filled with that attempts to explain life, the universe, and everything:
 
-``` js
+<!-- ``` js
 /* Life, the Universe, and Everything */
 
 var 🌍 = function () {
@@ -65,7 +68,7 @@ var 🌍 = function () {
 };
 
 zero lines of Javascript. 🕹️
-```
+``` -->
 
 ## Add footnotes for additional info or references
 

@@ -8,18 +8,26 @@
 
   }
 
-  a.edit  {
-    color: "pink";
+  body .prose {
+    @apply dark:text-pink-400
+  }
+
+  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 .prose hr, .prose strong {
+    @apply dark:text-gray-400
+  }
+
+
+  .prose a {
+    @apply dark:text-gray-400
+  }
+
+  .prose a:hover {
+    @apply dark:text-gray-500
   }
 
   .callout {
-    @apply p-4 rounded-lg bg-pink-100;
+    @apply p-4 rounded-lg bg-pink-100 dark:bg-gray-400;
   }
-
-  img {
-    @apply: max-w-sm;
-  }
-
   ul.contains-task-list,
   .prose ul.contains-task-list,
   .prose-xl ul.contains-task-list,
@@ -27,6 +35,40 @@
   .prose-sm ul.contains-task-list {
     @apply list-none !important;
     @apply -ml-12 !important;
+  }
+
+  nav ul ul {
+   @apply ml-6 text-gray-100;
+  }
+
+  nav ul li a {
+    @apply mb-1 pt-2 pr-4 pb-2 pl-2 rounded w-full block;
+  }
+  nav ul li a {
+    @apply text-gray-500 dark:text-gray-500;
+  }
+
+  nav ul li a:hover {
+    @apply bg-gray-200 dark:bg-gray-600  dark:text-gray-400; 
+  }
+
+  .text-align-center {
+    @apply flex justify-center; 
+  }
+
+  .prose ul {
+    @apply list-none;
+  }
+  nav ul li a.active {
+    @apply bg-gray-200 dark:bg-gray-600 dark:text-gray-400;
+  }
+
+  .adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet {
+    @apply ml-auto mr-auto dark:bg-gray-700 p-1 rounded text-center
+  }
+
+  .adjust  p img:hover, .adjust img:hover {
+    @apply dark:bg-pink-600
   }
 
 

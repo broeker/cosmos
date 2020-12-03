@@ -106,6 +106,8 @@ node --version
 * https://github.com/robinmoisson/staticrypt/issues/116
 * https://alexcarpenter.me/posts/2020/05/eleventy-callout/
 * https://www.lafuente.me/posts/webcomponents-eleventy/
+* https://github.com/robinmoisson/staticrypt/issues/120
+* See: https://instant.page/ 
 
 ## Caveats/TODOs
 

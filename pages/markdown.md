@@ -6,6 +6,7 @@ eleventyNavigation:
   order: 10
   key: Markdown 
   title: Markdown
+tags: main
 ---
 This page shows the available Markdown-it formatters available to you with examples. For a few more bits of syntax or plugins that are not covered here see the [markdown-it demo](https://markdown-it.github.io/).
 

@@ -1,10 +1,11 @@
 ---
-layout: layouts/home.njk
+layout: layouts/page.njk
 title: Meet Cosmos
 date: 2020-11-20
 permalink: /
 eleventyNavigation:
   key: Home
+  title: Meet Cosmos 
   order: 0
 ---
 Cosmos is starter project you can use to spin up a simple website exactly like this one. It uses [Eleventy](https://www.11ty.io) for site generation, [Tailwind 2.0](https://tailwindcss.com/) for utility-based theming, and [Alpine.js](https://github.com/alpinejs/alpine) for a lightweight JavaScript engine. You can host your site on [Netlify](https://www.netlify.com), with automated [Github](https://www.github.com) deployments and an optional [Netlify CMS](https://www.netlifycms.org/) integration. Cosmos is designed to be:
