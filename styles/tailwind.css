@@ -17,8 +17,7 @@
   }
 
   .prose pre {
-    @apply overflow-x: auto !important
-
+    @apply overflow-x-auto
   }
 
   .prose a {
