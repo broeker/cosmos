@@ -4,7 +4,7 @@ const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const svgContents = require("eleventy-plugin-svg-contents");
-
+const mdIterator = require('markdown-it-for-inline')
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(svgContents); 
@@ -51,9 +51,34 @@ module.exports = function(eleventyConfig) {
     }, {});
   });
 
+   // Creates custom collection "pages"
+   eleventyConfig.addCollection("pages", function(collection) {
+    return collection.getFilteredByGlob("pages/*.md");
+   });
+
+   // Search collection
+   const searchFilter = require("./filters/searchFilter");
+   eleventyConfig.addFilter("search", searchFilter);
+   eleventyConfig.addFilter("squash", require("./filters/squash.js") );
+   eleventyConfig.addCollection("results", collection => {
+    return [...collection.getFilteredByGlob("pages/*.md")];
+   });
+  
+   eleventyConfig.addCollection("menuItems", collection =>
+    collection
+      .getAll()
+      .filter(function(item) {
+        return "eleventyNavigation" in item.data;
+      })
+      .sort((a, b) => {
+        return (a.data.eleventyNavigation.order || 0) - (b.data.eleventyNavigation.order || 0);
+      })
+  );
+
+
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
+    return DateTime.fromJSDate(dateObj).toFormat("LLL dd, yyyy");
   });
 
   // Date formatting (machine readable)
@@ -105,6 +130,7 @@ module.exports = function(eleventyConfig) {
   let markdownToc = require('markdown-it-table-of-contents')
   let markdownItTasks = require('markdown-it-task-lists')
   let markdownItAttrs = require("markdown-it-attrs")
+  let markdownItCenterText = require("markdown-it-center-text")
   let options = {
     html: true,
     breaks: true,
@@ -112,16 +138,26 @@ module.exports = function(eleventyConfig) {
     typographer: true
   };
   let opts = {
-    permalink: false
+    permalink: true,
+    permalinkClass: "direct-link",
+    permalinkSymbol: ""
   };
 
   eleventyConfig.setLibrary("md", markdownIt(options)
+    .use(mdIterator, 'url_new_win', 'link_open', function (tokens, idx) {
+      const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === 'href')
+      if (href && (!href.includes('franknoirot.co') && !href.startsWith('/') && !href.startsWith('#'))) {
+        tokens[idx].attrPush([ 'target', '_blank' ])
+        tokens[idx].attrPush([ 'rel', 'noopener noreferrer' ])
+      }
+    })
     .use(markdownItAnchor, opts)
     .use(markdownItEmoji)
     .use(markdownItFootnote)
     .use(markdownToc)
     .use(markdownItContainer, 'callout')
     .use(markdownItTasks)
+    .use(markdownItCenterText)
     .use(markdownLinkifyImages, {
       imgClass: "p-8",
     })

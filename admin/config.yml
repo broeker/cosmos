@@ -57,8 +57,10 @@ collections:
         fields:
           - {label: "Site name", name: "name", widget: "string"}
           - {label: "Site subtitle", name: "subtitle", widget: "string"}
-          - {label: "Site emoji", name: "emoji", widget: "string"
+          - {label: "Site emoji", name: "emoji", widget: "string"}
+          - {label: "Site footer", name: "footer", widget: "string"}
           - {label: "Site Url", name: "url", widget: "string"}
+          - 
           - {label: "Author Name", name: "authorName", widget: "string"}
           - {label: "Author Email Address", name: "authorEmail", widget: "string"}
           - {label: "Author Twitter Handle", name: "authorHandle", widget: "string", required: false}

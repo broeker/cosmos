@@ -11,18 +11,20 @@ module.exports = {
       safelist: [],
     },
   },
-  darkMode: false,
+  darkMode: 'class',
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       typography: {
         DEFAULT: {
           css: {
-            color: '#333',
-            'max-width': '100%',
+            maxWidth: '100%',
             a: {
-              color: '#3182ce',
+              color: '#1D4ED8',
               '&:hover': {
-                color: '#2c5282',
+                color: '#059669',
               },
             },
             '.prose a.edit, .tag a': {
@@ -38,17 +40,28 @@ module.exports = {
             '.prose-xl h1': {
               'margin-bottom': 0,
             },
-            '.adjust p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet': {
-              'text-align': 'center',
-              'margin-left': 'auto',
-              'margin-right': 'auto',
-              'background-color': '#F3F4F6',
-              'padding': '1em',
-              'border-radius': '10px',
-            },
-            '.adjust p img:hover, .adjust p img:hover': {
-              'background-color': '#E5E7EB'
-            },
+            // '.adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet': {
+            //   'text-align': 'center',
+            //   'margin-left': 'auto',
+            //   'margin-right': 'auto',
+            //   'background-color': '#F8FAFC',
+            //   'padding': '1em',
+            //   'border-radius': '10px',
+            // },
+            // '.adjust p img:hover, .adjust p img:hover': {
+            //   'background-color': '#F1F5F9'
+            // },
+            // '.text-align-center': {
+            //   'width': 'auto',
+            //   'margin': 'auto',
+            //   'align': 'center'
+            // },
+            'ul.footer-nav': {
+              '::before': {
+                display: 'none',
+
+              }
+            }
             
           },
         },
