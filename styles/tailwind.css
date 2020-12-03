@@ -16,6 +16,10 @@
     @apply dark:text-gray-400
   }
 
+  .prose pre {
+    @apply overflow-x: auto !important
+
+  }
 
   .prose a {
     @apply dark:text-gray-400

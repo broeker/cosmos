@@ -116,10 +116,6 @@ Emdash --
 "Smartypants, double quotes" and 'single quotes'
 ```
 
-
-
-
-
 ## Blockquotes
 
 > Venture another world dispassionate extraterrestrial observer preserve and cherish that pale blue dot a billion trillion the ash of stellar alchemy? A still more glorious dawn awaits extraordinary claims require extraordinary evidence paroxysm of global death kindling the energy hidden in matter extraordinary claims require extraordinary evidence bits of moving fluff? 
@@ -191,6 +187,7 @@ Create a code block fence with three backticks on a single line, followed by you
 Note: this is indented only for demo purposes; code fences should not be indented.
 
 ```
+
 You can create also create a code block simply by indenting twice.
 
     // Entire code block is indented twice 
@@ -213,9 +210,6 @@ You can create also create a code block simply by indenting twice.
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 ```
-
-
-
 
 ## Images
 
