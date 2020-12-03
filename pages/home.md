@@ -91,7 +91,7 @@ You must be running version 12 or higher of Node due to the new Tailwind release
 * [Node and NPM](https://nodejs.org/)
 * [NVM](https://github.com/nvm-sh/nvm) (optional)
 
-#### To find your current node version:
+### To find your current node version:
 
 ```
 node --version
