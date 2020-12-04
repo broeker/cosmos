@@ -156,6 +156,7 @@ module.exports = function(eleventyConfig) {
     .use(markdownItFootnote)
     .use(markdownToc)
     .use(markdownItContainer, 'callout')
+    .use(markdownItContainer, 'alert')
     .use(markdownItTasks)
     .use(markdownItCenterText)
     .use(markdownLinkifyImages, {

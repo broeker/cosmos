@@ -1,6 +1,7 @@
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
+  important: true,
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
@@ -21,6 +22,7 @@ module.exports = {
         DEFAULT: {
           css: {
             maxWidth: '100%',
+            minWidth: 0, 
             a: {
               color: '#1D4ED8',
               '&:hover': {
@@ -40,28 +42,19 @@ module.exports = {
             '.prose-xl h1': {
               'margin-bottom': 0,
             },
-            // '.adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet': {
-            //   'text-align': 'center',
-            //   'margin-left': 'auto',
-            //   'margin-right': 'auto',
-            //   'background-color': '#F8FAFC',
-            //   'padding': '1em',
-            //   'border-radius': '10px',
-            // },
-            // '.adjust p img:hover, .adjust p img:hover': {
-            //   'background-color': '#F1F5F9'
-            // },
-            // '.text-align-center': {
-            //   'width': 'auto',
-            //   'margin': 'auto',
-            //   'align': 'center'
-            // },
             'ul.footer-nav': {
               '::before': {
                 display: 'none',
 
               }
-            }
+            },
+            'ul.contains-task-list': {
+              '::before': {
+                display: 'none',
+
+              }
+            },
+           
             
           },
         },

@@ -2,15 +2,5 @@
 permalink: /search-index.json
 ---
 {{ collections.results | search | dump | safe  }}
-{# {"search" : [
-{%- for item in collections.results -%}
-  {
-    "url" : "{{ item.url }}",
-    "title" : "{{ item.data.title }}",
-    "text" : "{{ (item.data.title + " " + item.templateContent) | squash  }}"
-  }{% if not loop.last %},{% else %}{%- endif -%}
-{%- endfor -%}
-]} #}
-
 
 

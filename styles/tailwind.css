@@ -16,8 +16,31 @@
     @apply dark:text-gray-400
   }
 
-  .prose pre {
-    @apply overflow-x-auto
+  .prose pre code {
+    @apply overflow-x-auto !important 
+  }
+
+  .prose-lg pre code {
+    @apply overflow-x-auto !important 
+  }
+
+  .prose-xl pre code {
+    @apply overflow-x-auto !important 
+  }
+
+  .prose pre  {
+    @apply max-w-full overflow-x-auto !important 
+  }
+
+  .prose-lg pre  {
+    @apply overflow-x-auto !important 
+  }
+
+  .prose-xl pre {
+    @apply overflow-x-auto !important 
+  }
+  pre {
+    @apply overflow-x-auto !important 
   }
 
   .prose a {
@@ -29,15 +52,25 @@
   }
 
   .callout {
-    @apply p-4 rounded-lg bg-pink-100 dark:bg-gray-400;
+    @apply p-4 rounded-lg font-semibold bg-yellow-100 dark:bg-gray-400 ;
   }
+
+  .alert {
+    @apply p-4 rounded-lg bg-red-700 text-gray-50 dark:bg-gray-400 font-semibold;
+  }
+
   ul.contains-task-list,
   .prose ul.contains-task-list,
   .prose-xl ul.contains-task-list,
   .prose-lg ul.contains-task-list,
   .prose-sm ul.contains-task-list {
     @apply list-none !important;
-    @apply -ml-12 !important;
+  }
+
+  .prose ul.contains-task-list .task-list-item {
+    ::before {
+      @apply hidden !important;
+    }
   }
 
   nav ul ul {
@@ -67,11 +100,11 @@
   }
 
   .adjust  p img, .adjust img, .adjust p iframe, .adjust iframe, .twitter-tweet {
-    @apply ml-auto mr-auto dark:bg-gray-700 p-1 rounded text-center
+    @apply ml-auto mr-auto bg-gray-100 dark:bg-gray-700 p-2 rounded text-center
   }
 
   .adjust  p img:hover, .adjust img:hover {
-    @apply dark:bg-pink-600
+    @apply bg-gray-300 dark:bg-pink-600
   }
 
 

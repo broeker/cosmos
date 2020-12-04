@@ -89,8 +89,26 @@ You can easily embed Youtube videos, Tweets, and any other embeddable content. U
 Use a special syntax to insert a callout box like this one within the flow of your text. Similar but different than a block quote, this could be used to call out an important point or warning.
 
 ::: callout 
-*Here be dragons*
+*Callout: here be dragons*
 :::
+
+An alert: 
+
+::: alert 
+*Alert: here be dragons*
+:::
+
+## Solar System Exploration, 1950s – 1960s
+
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [x] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
 
 ## Tables
 

@@ -13,7 +13,7 @@ if (window.netlifyIdentity) {
 function showNavigation() {
   const navigation = document.getElementById("navigation");
   navigation.classList.remove("hidden", "sticky","pt-32"); 
-  navigation.classList.add("absolute","right-0","z-50", "pt-0", "bg-white","border-l", "border-gray-200"); 
+  navigation.classList.add("absolute","right-0", "top-0", "-mt-0", "z-50", "pt-0", "bg-white","border-l", "border-gray-200"); 
 }
 
 function closeNavigation() {
