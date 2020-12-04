@@ -1,7 +1,7 @@
 ---
 title: Stars and Planets and all the great things
 metaDescription: This is a sample meta description. If one is not present in
-  your page/post's front matter, the default metadata.desciption will be used
+  your page/post's front matter, the default site.desciption will be used
   instead.
 date: 2020-11-20
 permalink: /stars-and-planets/index.html

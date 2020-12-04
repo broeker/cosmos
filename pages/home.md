@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-title: Meet Cosmos
+title: Meet Cosmo Docs
 date: 2020-11-20
 permalink: /
 eleventyNavigation:

@@ -13,6 +13,7 @@
   "subtitle": "Generate a clean and simple docs site",
   "footer": "Made with ❤️️ in Minneapolis",
   "enableDarkMode": true,
+  "enableEditButton": true,
   "description": "A simple document generator based on Eleventy, Tailwind 2.0, and Alpine.js",
   "enableContact": true,
   "maxPostsPerPage": 5,

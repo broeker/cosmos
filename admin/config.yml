@@ -16,18 +16,18 @@ media_folder: "static/img" # Media files will be stored in the repo under images
 
 collections:
   # Our blog posts
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Post" # Used in the UI
-    folder: "posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Author", name: "author", widget: "string", default: "Anonymous" }
-      - { label: "Summary", name: "summary", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Body", name: "body", widget: "markdown" }
+  # - name: "blog" # Used in routes, e.g., /admin/collections/blog
+  #   label: "Post" # Used in the UI
+  #   folder: "posts" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Publish Date", name: "date", widget: "datetime" }
+  #     - { label: "Author", name: "author", widget: "string", default: "Anonymous" }
+  #     - { label: "Summary", name: "summary", widget: "text" }
+  #     - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+  #     - { label: "Body", name: "body", widget: "markdown" }
   # Our pages e.g. About
   - name: "pages"
     label: "Page"
@@ -61,6 +61,7 @@ collections:
           - {label: "Github Url", name: "githubUrl", widget: "string"}
           - {label: "Github branch", name: "githubBranch", widget: "string"}
           - {label: "Meta description", name: "description", widget: "string"}
+          - {label: "Enable edit button", name: "enableEditButton", widget: "boolean"}
           - {label: "Enable Netlify CMS", name: "enableNetlifyCMS", widget: "boolean", default: false}
           - {label: "Enable Github link", name: "enableGithubLink", widget: "boolean"}
           - {label: "Enable darkmode", name: "enableDarkMode", widget: "boolean"}
@@ -81,32 +82,32 @@ collections:
       #         - {label: "Text", name: "text", widget: "string"}
       #         - {label: "Url", name: "url", widget: "string"}
       #         - {label: "Is url to external site?", name: "external", widget: "boolean", required: false}
-      - label: "Theme Settings"
-        name: "theme"
-        delete: false
-        file: "_data/tokens.json"
-        fields:
-          - label: "Size Scale"
-            name: "size-scale"
-            widget: "object"
-            fields: 
-              - {label: "Base Size", name: "base", widget: "string", default: "1rem"}
-              - {label: "Ratio: 300", name: "300", widget: "string", default: "0.8rem"}
-              - {label: "Ratio: 500", name: "500", widget: "string", default: "1.25rem"}
-              - {label: "Ratio: 600", name: "600", widget: "string", default: "1.56rem"}
-              - {label: "Ratio: 700", name: "700", widget: "string", default: "1.95rem"}
-              - {label: "Ratio: 800", name: "800", widget: "string", default: "2.44rem"}
-              - {label: "Ratio: 900", name: "900", widget: "string", default: "3.05rem"}
-              - {label: "Max Size", name: "max", widget: "string", default: "4rem"}
-          - label: "Colors"
-            name: "colors"
-            widget: "object"
-            fields: 
-              - {label: "Primary", name: "primary", widget: "string", default: "hsl(208, 57%, 21%)"}
-              - {label: "Primary Shade (darker)", name: "primary-shade", widget: "string", default: "hsl(208, 56%, 14%)"}
-              - {label: "Primary Glare (lighter)", name: "primary-glare", widget: "string", default: "hsl(207, 57%, 31%)"}
-              - {label: "Highlight", name: "highlight", widget: "string", default: "hsl(42, 98%, 77%)"}
-              - {label: "Light", name: "light", widget: "string", default: "hsl(0, 0%, 100%)"}
-              - {label: "Mid", name: "mid", widget: "string", default: "hsl(0, 0%, 80%)"}
-              - {label: "Dark", name: "dark", widget: "string", default: "hsl(0, 0%, 20%)"}
-              - {label: "Slate", name: "slate", widget: "string", default: "hsl(0, 0%, 25%)"}          
+      # - label: "Theme Settings"
+      #   name: "theme"
+      #   delete: false
+      #   file: "_data/tokens.json"
+      #   fields:
+      #     - label: "Size Scale"
+      #       name: "size-scale"
+      #       widget: "object"
+      #       fields: 
+      #         - {label: "Base Size", name: "base", widget: "string", default: "1rem"}
+      #         - {label: "Ratio: 300", name: "300", widget: "string", default: "0.8rem"}
+      #         - {label: "Ratio: 500", name: "500", widget: "string", default: "1.25rem"}
+      #         - {label: "Ratio: 600", name: "600", widget: "string", default: "1.56rem"}
+      #         - {label: "Ratio: 700", name: "700", widget: "string", default: "1.95rem"}
+      #         - {label: "Ratio: 800", name: "800", widget: "string", default: "2.44rem"}
+      #         - {label: "Ratio: 900", name: "900", widget: "string", default: "3.05rem"}
+      #         - {label: "Max Size", name: "max", widget: "string", default: "4rem"}
+      #     - label: "Colors"
+      #       name: "colors"
+      #       widget: "object"
+      #       fields: 
+      #         - {label: "Primary", name: "primary", widget: "string", default: "hsl(208, 57%, 21%)"}
+      #         - {label: "Primary Shade (darker)", name: "primary-shade", widget: "string", default: "hsl(208, 56%, 14%)"}
+      #         - {label: "Primary Glare (lighter)", name: "primary-glare", widget: "string", default: "hsl(207, 57%, 31%)"}
+      #         - {label: "Highlight", name: "highlight", widget: "string", default: "hsl(42, 98%, 77%)"}
+      #         - {label: "Light", name: "light", widget: "string", default: "hsl(0, 0%, 100%)"}
+      #         - {label: "Mid", name: "mid", widget: "string", default: "hsl(0, 0%, 80%)"}
+      #         - {label: "Dark", name: "dark", widget: "string", default: "hsl(0, 0%, 20%)"}
+      #         - {label: "Slate", name: "slate", widget: "string", default: "hsl(0, 0%, 25%)"}          
