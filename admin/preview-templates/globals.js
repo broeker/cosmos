@@ -2,7 +2,7 @@ import htm from "https://unpkg.com/htm?module";
 
 const html = htm.bind(h);
 
-// Preview component for a Page
+// Preview component for Globals 
 const Globals = createClass({
   render() {
     const entry = this.props.entry;
@@ -18,4 +18,4 @@ const Globals = createClass({
   }
 });
 
-export default Page;
+export default Globals;

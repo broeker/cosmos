@@ -1,10 +1,10 @@
-import Post from "/admin/preview-templates/post.js";
+//import Post from "/admin/preview-templates/post.js";
 import Page from "/admin/preview-templates/page.js";
 import Globals from "/admin/preview-templates/globals.js"
 // Register the Post component as the preview for entries in the blog collection
 CMS.registerPreviewTemplate("globals", Globals)
-CMS.registerPreviewTemplate("blog", Post);
 CMS.registerPreviewTemplate("pages", Page);
+//CMS.registerPreviewTemplate("blog", Post);
 
 CMS.registerPreviewStyle("/style.css");
 
