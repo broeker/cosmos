@@ -15,7 +15,6 @@ media_library:
     cloud_name: broeker
     api_key: 159818251742281
 
-
 collections:
   # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
@@ -60,7 +59,6 @@ collections:
           - {label: "Site emoji", name: "emoji", widget: "string", required: false}
           - {label: "Site footer", name: "footer", widget: "string", required: false}
           - {label: "Site Url", name: "url", widget: "string"}
-          - {label: "Site Url", name: "url", widget: "string"}
           - {label: "Github Url", name: "githubUrl", widget: "string"}
           - {label: "Github branch", name: "githubBranch", widget: "string"}
           - {label: "Meta description", name: "url", widget: "string"}
@@ -69,6 +67,7 @@ collections:
           - {label: "Enable darkmode", name: "enableDarkMode", widget: "boolean"}
           - {label: "Enable search", name: "enableSearch", widget: "boolean"}
           - {label: "Enable contact form", name: "enableContact", widget: "boolean"}
+          - {label: "Enable Cloudinary", name: "enableCloudinary", widget: "boolean", default: false}
           - {label: "Site owner", name: "authorName", widget: "string"}
           - {label: "Site owner email", name: "authorEmail", widget: "string"}
       # - label: "Navigation"

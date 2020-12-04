@@ -8,6 +8,14 @@ if (window.netlifyIdentity) {
   });
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  if (localStorage.getItem('darkmode') === 'true') {
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
+  }
+});
+
 
 
 function showNavigation() {
@@ -23,7 +31,14 @@ function closeNavigation() {
 }
 
 function activateDarkMode() {
-  document.body.classList.toggle("dark");
+  
+  if (localStorage.getItem('darkmode') === 'true') {
+    localStorage.setItem('darkmode', 'false')
+    document.body.classList.remove("dark");
+  } else {
+    localStorage.setItem('darkmode', 'true')
+    document.body.classList.add("dark");
+  }
 }
 
 

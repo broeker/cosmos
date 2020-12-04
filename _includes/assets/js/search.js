@@ -5,7 +5,7 @@
         bool: "OR",
         expand: true,
       });
-  
+      console.log(document.body)
       const searchBox = document.getElementById("searchField");
       const resEl = document.getElementById("searchResults");
       const noResultsEl = document.getElementById("noResultsFound");
