@@ -1,10 +1,15 @@
 {
+  "enableGithubLink": true,
   "showThemeCredit": true,
+  "githubBranch": "main",
   "emoji": "💥",
+  "enableSearch": true,
   "name": "Cosmo Docs",
+  "githubUrl": "https://github.com/broeker/cosmos/",
   "shortDesc": "Hylia is a lightweight Eleventy starter kit to help you to create your own blog or personal website.",
   "url": "https://cosmos11ty.netlify.app",
   "authorEmail": "broeker@gmail.com",
+  "enableCloudinary": true,
   "authorHandle": "@hankchizljaw",
   "authorName": "Tim Broeker",
   "enableThirdPartyComments": false,
@@ -12,5 +17,9 @@
   "subtitle": "Generate a clean and simple docs site",
   "faviconPath": "/images/favicon.png",
   "footer": "Made with ❤️️ in Minneapolis",
-  "maxPostsPerPage": 5
+  "enableDarkMode": true,
+  "description": "A simple document generator based on Eleventy, Tailwind 2.0, and Alpine.js",
+  "enableContact": true,
+  "maxPostsPerPage": 5,
+  "enableNetlifyCMS": true
 }
