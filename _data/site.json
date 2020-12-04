@@ -10,12 +10,12 @@
   "authorEmail": "broeker@gmail.com",
   "enableCloudinary": true,
   "authorName": "Tim Broeker",
-  "subtitle": "Generate a clean and simple docs site",
+  "subtitle": "A simple document generator based on Eleventy, Tailwind 2.0, and Alpine.js",
   "footer": "Made with ❤️️ in Minneapolis",
   "enableDarkMode": true,
-  "enableEditButton": true,
   "description": "A simple document generator based on Eleventy, Tailwind 2.0, and Alpine.js",
   "enableContact": true,
   "maxPostsPerPage": 5,
-  "enableNetlifyCMS": true
+  "enableNetlifyCMS": true,
+  "enableEditButton": true
 }
