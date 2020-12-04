@@ -10,7 +10,8 @@ const Globals = createClass({
     return html`
       <main class="prose p-4">
         <div class="adjust">
-        ${this.props.widgetFor("body")}
+        <h1>${entry.getIn(["data", "name"], null)}</h1>
+        <h1>${entry.getIn(["data", "subtitle"], null)}</h1>
         </div>
       </main>
     `;
