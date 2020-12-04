@@ -1,14 +1,16 @@
 {
-    "showThemeCredit": true,
-    "name": "Hylia Starter Kit",
-    "shortDesc": "Hylia is a lightweight Eleventy starter kit to help you to create your own blog or personal website.",
-    "url": "https://hylia.website",
-    "authorEmail": "me@andy-bell.design",
-    "authorHandle": "@hankchizljaw",
-    "authorName": "Andy Bell",
-    "enableThirdPartyComments": false,
-    "maxPostsPerPage": 5,
-    "paymentPointer": "$ilp.uphold.com/MggmnFEyQqhk",
-    "faviconPath": "/images/favicon.png"
-  }
-
+  "showThemeCredit": true,
+  "emoji": "💥",
+  "name": "Cosmo Docs",
+  "shortDesc": "Hylia is a lightweight Eleventy starter kit to help you to create your own blog or personal website.",
+  "url": "https://cosmos11ty.netlify.app",
+  "authorEmail": "broeker@gmail.com",
+  "authorHandle": "@hankchizljaw",
+  "authorName": "Tim Broeker",
+  "enableThirdPartyComments": false,
+  "paymentPointer": "$ilp.uphold.com/MggmnFEyQqhk",
+  "subtitle": "Generate a clean and simple docs site",
+  "faviconPath": "/images/favicon.png",
+  "footer": "Made with ❤️️ in Minneapolis",
+  "maxPostsPerPage": 5
+}
