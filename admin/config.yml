@@ -43,7 +43,9 @@ collections:
         widget: "object"
         fields:
           - { label: "Key", name: "key", widget: "string" }
-          - { label: "Order", name: "order", widget: "number", default: 0 }
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Order", name: "order", widget: "number", default: 100 }
+          - { label: "Parent", name: "parent", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Globals"
     name: "globals"
