@@ -1,315 +1,144 @@
 ---
-title: Markdown Examples
+title: Learning Markdown
 date: 2020-11-20
 permalink: /markdown/index.html
 eleventyNavigation:
-  order: 10
-  key: Markdown 
-  title: Markdown
-tags: main
+  key: Learning Markdown 
+  order: 5
 ---
-This page shows the available Markdown-it formatters available to you with examples. For a few more bits of syntax or plugins that are not covered here see the [markdown-it demo](https://markdown-it.github.io/).
+Cosmos uses Markdown (specifically [Markdown-it](https://github.com/markdown-it/markdown-it)), which is a simple markup language designed for long form writing and prose. This is a simple example page to demonstrate some common markdown scenarios and to demonstrate the typography built into Cosmos (thank you to the _.prose_ class and the designers behind [Tailwind Typography](https://tailwindcss.com/docs/typography-plugin)). 
 
-::: warning
-**Pro tip:** you can remove this file from your navigation, but keep it around for reference. 
-:::
+Once you have your own Cosmos site you can delete or replace this lovely page. 🌞
+
+## Structured text and headers
+
+Use headers and subheaders to structure your text, along with lists, blockquotes, images, and embeds. You can **place emphasis** on text by using bold tags, or _simple italics to get your point across_ or to otherwise emphasis your text. Headings 1-4 will drop progressively in size while Headings 5-6 will simply render as small, unbolded text. 
 
 
-# h1 Heading 8-)
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+### A picture is worth a thousand words 
 
-Generally, you should reserve the h1 heading for your primary page title, and this is handled automatically in your templates. In most cases, start your content headings at level h2 (##).
+You can drop images, diagrams, or illustrations anywhere in your content. Images are automatically set to 100% width and centered with a subtle border hover. We use the **markdown-it-linkify-images** plugin to automatically generate a link to a full-size version of the image for larger charts or graphs.
 
-```
-# h1 heading
-## h2 heading
-### h3 heading
-#### h4 heading
-##### h5 heading
-###### h6 heading
-```
+![Sagan](https://res.cloudinary.com/broeker/image/upload/w_1000,c_scale/v1606111412/sagan_tczrlj.jpg)
 
-## Test copy
+->_Carl Sagan, 1987_<-
 
-Culture quasar Sea of Tranquility Drake Equation hundreds of thousands preserve and cherish that pale blue dot. With pretty stories for which there's little good evidence as a patch of light realm of the galaxies cosmic ocean extraordinary claims require extraordinary evidence the ash of stellar alchemy. Hydrogen atoms descended from astronomers rich in mystery Orion's sword hydrogen atoms descended from astronomers.  
+## Take charge of your images
 
-<!-- ```
-## Test copy
+You are responsible for your image sizing and optimization, and should upload the smallest useful version of your image. If you want to add smaller images than the one above, resize to your desired dimensions and add it to the page:
 
-Writing in Markdown is very simple, and designed to get out of your way if you follow its rules. 
+![Astronaut](https://res.cloudinary.com/broeker/image/upload/w_300,c_scale/v1606078324/samples/photo-1454789548928-9efd52dc4031_e0fe5s.jpg)
+
+->_Astronaut_<-
+
+
+If you don't want to worry about image resizing or optimization, youu can use a [free Cloudinary account](https://cloudinary.com/) to handle your image sizing on the fly in the cloud and serve it from a global CDN such as this example above. Using this method, you can simply upload full res versions of your files to Cloudinary, and then serve them with your desired transformations.
+
+## Convey useful information in lists
+
+Hundreds of thousands hearts of the stars bits of moving fluff dispassionate extraterrestrial observer rich in mystery Drake Equation?
+
+* carbon in our apple pies
+* questions stirred by starlight
+* distant epochs and great turbulent clouds
+*  the only home we've ever known
+
+ Tingling of the spine descended from astronomers courage of our questions stirred by starlight inconspicuous motes of rock and gas two ghostly white figures in coveralls and helmets are softly dancing.
+
+## Share code samples
+
+Here is an example code block of silly code filled with that attempts to explain life, the universe, and everything:
+
+<!-- ``` js
+/* Life, the Universe, and Everything */
+
+var 🌍 = function () {
+    var result = '', len = arguments.length, args = Array.prototype.reverse.call(arguments), value;
+    while(len--) {
+        value = args[len];
+        if(value !== 42) {
+            result += value + ' ';
+        }
+    }
+
+    return result;
+};
+
+zero lines of Javascript. 🕹️
 ``` -->
 
+## Add footnotes for additional info or references
 
-## Emphasis
+Gathered by gravity Flatland across the centuries made in the interiors of collapsing stars ship of the imagination circumnavigated. White dwarf emerged into consciousness venture citizens of distant epochs prime number finite but unbounded.[^first] Billions upon billions globular star cluster encyclopaedia galactica tingling of the spine citizens of distant epochs billions upon billions? The carbon in our apple pies with pretty stories for which there's little good evidence concept of the number one with pretty stories for which there's little good evidence courage of our questions Drake Equation.[^second]
 
-**This is bold text**
+## Use blockquotes to callout text
 
-*This is italic text*
+> The cosmos (UK: /ˈkɒzmɒs/, US: /-moʊs/) is the Universe. Using the word cosmos rather than the word universe implies viewing the universe as a complex and orderly system or entity; the opposite of chaos.
 
-~~Strikethrough~~
+<!-- ## Embed all the things
 
-There are two method for bold and italic -- again, pick one and stick to it. 
+You can easily embed Youtube videos, Tweets, and any other embeddable content. Use these judiciously; even this tiny Youtube embed has a notable effect on page performance scores:
 
-```
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MrZ4197C1I0?start=10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-**This is bold text**
+## Custom callouts
 
-__This is bold text__
-
-*This is italic text*
-
-_This is italic text_
-
-~~Strikethrough~~
-```
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica 
-
-```
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica 
-
-```
-
-## Horizontal Rules
-
-Horizontal rules are an effective way to break up a page into distinct sections. You can create a horizontal rule by using (3) or more of the following characters on their own line. Pick one system and stick with it, I prefer three short dashes :)
-
----
-
-```
-___
-
----
-
-***
-```
-
-## Typographic replacements
-
-Using typographer plugin.
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-Emdash --
-
-"Smartypants, double quotes" and 'single quotes'
-
-```
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
---
-
-"Smartypants, double quotes" and 'single quotes'
-```
-
-## Blockquotes
-
-> Venture another world dispassionate extraterrestrial observer preserve and cherish that pale blue dot a billion trillion the ash of stellar alchemy? A still more glorious dawn awaits extraordinary claims require extraordinary evidence paroxysm of global death kindling the energy hidden in matter extraordinary claims require extraordinary evidence bits of moving fluff? 
-
-```
-> Blockquotes can also be nested by using additional greater-than signs right next to each other or with spaces between arrows, but I'm not sure why you'd want to do this unless you were quoting a conversation.
-```
-
-
-## Lists
-
-Creating lists or nested lists using one of three characters, and two indents for nested items. Again, pick a syntax and stick to it  :)
-
-* Create a list by starting a line with `+`, `-`, or `*`
-* Sub-lists are made by indenting 2 spaces:
-  * Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    * Facilisis in pretium nisl aliquet
-    8 Nulla volutpat aliquam velit
-* Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-```
-* Create a list by starting a line with `+`, `-`, or `*`
-* Sub-lists are made by indenting 2 spaces:
-  * Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    * Facilisis in pretium nisl aliquet
-    * Nulla volutpat aliquam velit
-* Very easy!
-
-Ordered list
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.
-
-```
-
-## Code
-
-There are multiple ways to format code samples.
-
-**Inline code** (single backticks)
-
-Inline `code`  -- this is currently broken in this stack for unknown reasons, it works but should be nicely formatted
-
-**Block code "fences"** (three backticks)
-
-Create a code block fence with three backticks on a single line, followed by your code, followed by three ending backticks on a single line.
-
-```
-    ```
-    Sample code here...
-    ```
-Note: this is indented only for demo purposes; code fences should not be indented.
-
-```
-
-You can create also create a code block simply by indenting twice.
-
-    // Entire code block is indented twice 
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-## Tables
-
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-```
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-```
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
-
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
-- 19^th^
-- H~2~O
-
-
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-==Marked text==
-
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link[^first].
-
-Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
-
-Duplicated footnote reference[^second].
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
-
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-:   Definition 1
-with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
-_Compact style:_
-
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
-
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+Use a special syntax to insert a callout box like this one within the flow of your text. Similar but different than a block quote, this could be used to call out an important point or warning.
 
 ::: callout 
 *Callout: here be dragons*
 :::
 
+An alert: 
 
+::: alert 
+*Alert: here be dragons*
+:::
+
+## Solar System Exploration, 1950s – 1960s
+
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [x] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
+
+## Tables
+
+You can create simple table to layout data in columns will headers and rows.
+
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine engine number nine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. 
+
+## Go crazy with HTML and Tailwind
+
+With simple HTML and Tailwind (or Alpine.js) utility classes, you are free to embed basically any layout or custom design elements directly into your page or post. Requires basic HTML knowledge and learning how to apply Tailwind classes.
+
+<div class="flex space-x-4">
+  <div class="flex-1 p-4 bg-blue-50 rounded">
+    <!-- Will grow and shrink as needed without taking initial size into account -->
+  Some
+  </div>
+  <div class="flex-1 p-4 bg-blue-100 rounded">
+  custom 
+    <!-- Will grow and shrink as needed without taking initial size into account -->
+  </div>
+  <div class="flex-1 p-4 bg-blue-200 rounded">
+  html
+    <!-- Will grow and shrink as needed without taking initial size into account -->
+  </div>
+</div>
+
+Note: you can't intermingle markdown with your HTML and this isn't necessarily recommended, but it does mean that if you are an HTML wizard you can insert just about anything into your markdown.
+
+### Footnotes
+
+[^first]: Footnotes **can have markup** and multiple paragraphs.
+[^second]: Footnote text

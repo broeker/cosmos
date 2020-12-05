@@ -1,14 +1,16 @@
 <div class="fixed w-full top-0 left-0 z-10 "> 
-    <nav class="flex h-16 md:h-16 items-center bg-white dark:bg-gray-900 dark:text-gray-50 z-20 fixed top-0 left-0 right-0 border-b px-0 py-2 dark:bg-dark dark:border-gray-800 transition-colors duration-200">
+    <nav class="flex h-16 md:h-20 items-center bg-white dark:bg-gray-900 dark:text-gray-50 z-20 fixed top-0 left-0 right-0 border-b px-0 py-2 dark:bg-dark dark:border-gray-800 transition-colors duration-200">
       <div class="hidden md:block space-y-4 w-full p-4">
         <a class="no-underline text-gray-500  items-center hover:opacity-75" href="/">
           <span class="text-xl  mr-2 block font-extrabold block">{{ site.emoji }} {{ site.name }}</span>
-          <span class="text-gray-500 font-normal text-md w-full block"> {{ site.subtitle }}</span>
+          {% if site.subtitle %}
+          <span class="text-gray-500 font-normal text-xs sm:text-xs md:text-sm lg:text-base w-full block"> {{ site.subtitle }}</span>
+          {% endif %}
          </a>
       </div>
        {% if site.enableSearch == 1 %}
       <div class="relative w-full md:w-64">
-        <input  aria-label="Search" x-data="{ isOpen: true }" x-bind:class="{ 'hidden': !isOpen }" type="search" placeholder="Search..." class="w-60 bg-gray-50 dark:bg-gray-800 appearance-none border dark:border-gray-700 rounded py-2 px-3 mr-2 placeholder-gray-400 leading-tight focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-700 ring-opacity-50 border-gray-200" id="searchField">
+        <input  aria-label="Search" x-data="{ isOpen: true }" x-bind:class="{ 'hidden': !isOpen }" type="search" placeholder="Search..." class="ml-2 w-60 bg-gray-50 dark:bg-gray-800 appearance-none border dark:border-gray-700 rounded py-2 px-3 mr-2 placeholder-gray-400 leading-tight focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-700 ring-opacity-50 border-gray-200" id="searchField">
         <ul tabindex="0" class="w-full   list-none p-0 m-0 absolute left-0 md:right-0 bg-white rounded mt-1 top-100 z-2" id="searchResults"></ul>
         <div class="hidden shadow-md list-none p-4 m-0 absolute left-0 md:right-0 bg-white rounded mt-1 border top-100 divide-y divide-gray-300 z-2" id="noResultsFound" >
           <p>No results found.</p>

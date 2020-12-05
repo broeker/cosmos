@@ -52,12 +52,19 @@
   }
 
   .callout {
-    @apply p-4 rounded-lg font-semibold bg-yellow-100 dark:bg-gray-400 ;
+    @apply px-8 py-4 mb-4 rounded-lg bg-yellow-100;
+  }
+  .callout, .callout strong, .callout em {
+    @apply dark:bg-gray-400 dark:text-gray-900;
   }
 
   .alert {
-    @apply p-4 rounded-lg bg-red-700 text-gray-50 dark:bg-gray-400 font-semibold;
+    @apply px-8 py-4 mb-4 rounded-lg bg-red-700 text-gray-50;
   }
+  .alert, .alert strong, .alert em {
+    @apply text-gray-50 dark:bg-gray-400  dark:text-gray-900;
+  }
+
 
   ul.contains-task-list,
   .prose ul.contains-task-list,
