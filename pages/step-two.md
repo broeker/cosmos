@@ -58,7 +58,11 @@ eleventyNavigation:
 * **parent** -- this is used to set up a hierarchy of parent and child pages for your menu system. If you set the "parent" of a given page to match the "key" of another page, it will show up as a child page within the menu system.
 
 ::: callout
-Note: If you enable the optional Netlify CMS integration, all of these settings can also be changed via the CMS.
+**Mind your spaces!** Be sure to add one space after each entry in your frontmatter or it will cause an error in your build.
+:::
+
+::: callout
+**Netlify CMS:** If you enable the optional [Netlify CMS integration](/netlifycms), all of these settings can also be changed via the CMS.
 :::
 
 ## Add your content! 
