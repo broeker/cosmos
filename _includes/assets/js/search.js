@@ -24,20 +24,12 @@
         }
       });
 
-      document.addEventListener('click', function(event) {
-         
-        var isClickInside = navigation.contains(event.target);
-        if (!isClickInside) {
-          //the click was outside the specifiedElement, do something
-          console.log('wat?')
-        
-        }
-      });
       
     resEl.innerHTML = "";
       if (e.target.value != "") {
         if (results != "") {
           noResultsEl.classList.add("hidden")
+          resEl.classList.add("p-4")
           results.map((r) => {
             const { id, title, description } = r.doc;
             const el = document.createElement("li", { tabindex: '-1' });

@@ -51,6 +51,10 @@
     @apply dark:text-gray-500
   }
 
+  footer a:hover {
+    @apply text-blue-700
+  }
+
   .callout {
     @apply px-8 py-4 mb-4 rounded-lg bg-yellow-100;
   }
