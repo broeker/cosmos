@@ -38,20 +38,20 @@ module.exports = function(eleventyConfig) {
   // Add support for maintenance-free post authors
   // Adds an authors collection using the author key in our post frontmatter
   // Thanks to @pdehaan: https://github.com/pdehaan
-  eleventyConfig.addCollection("authors", collection => {
-    const blogs = collection.getFilteredByGlob("posts/*.md");
-    return blogs.reduce((coll, post) => {
-      const author = post.data.author;
-      if (!author) {
-        return coll;
-      }
-      if (!coll.hasOwnProperty(author)) {
-        coll[author] = [];
-      }
-      coll[author].push(post.data);
-      return coll;
-    }, {});
-  });
+  // eleventyConfig.addCollection("authors", collection => {
+  //   const blogs = collection.getFilteredByGlob("posts/*.md");
+  //   return blogs.reduce((coll, post) => {
+  //     const author = post.data.author;
+  //     if (!author) {
+  //       return coll;
+  //     }
+  //     if (!coll.hasOwnProperty(author)) {
+  //       coll[author] = [];
+  //     }
+  //     coll[author].push(post.data);
+  //     return coll;
+  //   }, {});
+  // });
 
    // Creates custom collection "pages"
    eleventyConfig.addCollection("pages", function(collection) {
@@ -61,7 +61,6 @@ module.exports = function(eleventyConfig) {
    // Search collection
    const searchFilter = require("./filters/searchFilter");
    eleventyConfig.addFilter("search", searchFilter);
-   eleventyConfig.addFilter("squash", require("./filters/squash.js") );
    eleventyConfig.addCollection("results", collection => {
     return [...collection.getFilteredByGlob("pages/*.md")];
    });
@@ -169,9 +168,6 @@ module.exports = function(eleventyConfig) {
       listType: "ol"
     })
   );
-
-
-
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],
