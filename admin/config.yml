@@ -69,7 +69,4 @@ collections:
           - {label: "Enable darkmode", name: "enableDarkMode", widget: "boolean"}
           - {label: "Enable search", name: "enableSearch", widget: "boolean"}
           - {label: "Enable contact form", name: "enableContact", widget: "boolean"}
-          - {label: "Enable Cloudinary", name: "enableCloudinary", widget: "boolean", default: false}
-          - {label: "Site owner", name: "authorName", widget: "string"}
-          - {label: "Site owner email", name: "authorEmail", widget: "string"}
     

@@ -25,7 +25,7 @@ Communicators and learners from [Da Vinci](https://en.wikipedia.org/wiki/Leonard
 You can launch your own spacebook and deploy it to the cloud on Netlify with the click of a button. You'll need a existing [Github account](https://github.com/) and a [Netlify account](https://www.netlify.com/) (which you  can create during this process if you wish):
 
 <div class="flex width-full  justify-center">
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/cosmos"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/spacebook"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 </div>
 
 Once complete, your new spacebook will be available immediately on Netlify and ready for customization and automatic deploys from your shiny new Github repository 👍 
@@ -44,7 +44,7 @@ What even is this? Spacebooks are created using:
 * [Netlify](https://www.netlify.com/) for one-click installs, easy form support, free hosting, and an automated [Github](https://github.com/) deployment pipepline 🤖
 * [Netlify CMS](https://www.netlify.com/) (optional) to provide an easy Markdown editor for creating and changing content with optional [Cloudinary support](https://cloudinary.com/) for advanced image management. 💻
 
-If you wish, you may customize Cosmos or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](https://www.11ty.dev/docs/starter/). 
+If you wish, you may customize your spacebook or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](https://www.11ty.dev/docs/starter/). 
 
 - - -
 

@@ -10,10 +10,8 @@
   <div class="flex-grow text-align-center">
     <!-- This item will grow -->
      <small>
-  {%- if site.footer -%}
-  {{ site.footer}}
-  {%- else -%}
-  Made with ❤️️ in Minneapolis
+  {% if site.footer %}
+  {{ site.footer }}
   {% endif %}
   </small>
   </div>

@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   key: Markdown demo 
-  order: 15
-  parent: Learning Markdown
+  order: 60 
+  parent: Spacebook markdown
   url: https://markdown-it.github.io/
 ---

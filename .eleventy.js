@@ -5,9 +5,11 @@ const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const svgContents = require("eleventy-plugin-svg-contents");
 const mdIterator = require('markdown-it-for-inline')
+const embedEverything = require("eleventy-plugin-embed-everything");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(svgContents); 
+  eleventyConfig.addPlugin(embedEverything);
   eleventyConfig.addShortcode("version", function () {
     return String(Date.now());
   });

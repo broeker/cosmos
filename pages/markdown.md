@@ -1,14 +1,14 @@
 ---
-title: Learning Markdown
+title: Spacebook markdown
 date: 2020-11-20
 permalink: /markdown/index.html
 eleventyNavigation:
-  key: Learning Markdown 
-  order: 5
+  key: Spacebook markdown 
+  order: 50 
 ---
-Cosmos uses Markdown (specifically [Markdown-it](https://github.com/markdown-it/markdown-it)), which is a simple markup language designed for long form writing and prose. This is a simple example page to demonstrate some common markdown scenarios and to demonstrate the typography built into Cosmos (thank you to the _.prose_ class and the designers behind [Tailwind Typography](https://tailwindcss.com/docs/typography-plugin)). 
+Spacebook uses Markdown (specifically [Markdown-it](https://github.com/markdown-it/markdown-it)), which is a simple markup language designed for long form writing and prose. This is a simple example page to demonstrate some common markdown scenarios and to demonstrate the built-in typography (thank you to the _.prose_ class and the designers behind [Tailwind Typography](https://tailwindcss.com/docs/typography-plugin)). 
 
-Once you have your own Cosmos site you can delete or replace this lovely page. 🌞
+Once you have your own spacebook site you can delete or replace this lovely page. 🌞
 
 ## Structured text and headers
 

@@ -7,13 +7,10 @@
   "url": "https://spacebook.netlify.app",
   "githubUrl": "https://github.com/broeker/spacebook/",
   "githubBranch": "main",
-  "authorEmail": "broeker@gmail.com",
-  "authorName": "Tim Broeker",
   "enableSearch": true,
   "enableContact": true,
   "enableDarkMode": true,
-  "enableNetlifyCMS": true,
+  "enableNetlifyCMS": false,
   "enableEditButton": true,
-  "enableGithubLink": true,
-  "enableCloudinary": true
+  "enableGithubLink": true
 }

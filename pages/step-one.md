@@ -6,7 +6,7 @@ eleventyNavigation:
   order: 5
   parent: Home
   key: Step one 
-  title: 'Step 1: Configure'
+  title: 'Step 1: Configure your site'
 ---
 Once you have your spacebook running, your first step is to do some basic configuration to make it your own. All site configuration is stored in a single file located at **_data/site.json**. If you have a local copy of your site installed you can edit this file directly, or you can edit and commit the file using the Github UI. The default site.json file looks like so: 
 
@@ -20,15 +20,12 @@ Once you have your spacebook running, your first step is to do some basic config
   "url": "https://spacebook.netlify.app",
   "githubUrl": "https://github.com/broeker/spacebook/",
   "githubBranch": "main",
-  "authorEmail": "broeker@gmail.com",
-  "authorName": "Tim Broeker",
   "enableSearch": true,
   "enableContact": true,
   "enableDarkMode": true,
   "enableEditButton": true,
   "enableGithubLink": true,
   "enableNetlifyCMS": false,
-  "enableCloudinary": false
 }
 ```
 
@@ -36,17 +33,26 @@ Once you have your spacebook running, your first step is to do some basic config
 Note: If you enable the optional Netlify CMS integration, all of these settings can also be changed via the CMS.
 :::
 
-When you make changes to this file and deploy your site will automically update to reflect your new settings:
+## Basic settings
+
+When you make changes to this file and deploy them your site will automically update to reflect your new settings:
 
 * **Name** -- this is the name or title of your site as it appears in the header
 * **Subtitle** -- this is the short subtitle that appears directly below your site name (optional)
 * **Description** -- this is used as your default metadata page description and can be overridden on a page-by-page basis as needed
-* **Footer** -- this is the plain text that appears in the bottom footer
+* **Footer** -- this is the plain text that appears in the bottom footer (optional)
+* **Emoji** -- this is the emoji used in the site header and as a favicon (optional)
+* **URL** -- this is the main URL to your site on Netlify
+* **githubUrl** -- this is the address to your Github repository, used to generate edit links
+* **githubBranch** -- this is the main of your primary Github branch (set to "main" by default)
 
-* [Eleventy Netlify Boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate) by Dan Urbanowicz
-* [Eleventy-Tailwind-AlpineJS Starter](https://github.com/gregwolanski/eleventy-tailwindcss-alpinejs-starter) by Greg Wolanski
-* [Eleventy  One](https://github.com/philhawksworth/eleventyone) by Phil Hacksworth
+## Enable or disable features
 
-There is no one "right way" to build an Eleventy site an this is just one small attempt.
+* **enableSearch** -- this will enable or disable the Elasticlunr search engine
+* **enableContact** -- enable or disable the Netlify contact form
+* **enableDarkMode** -- enable or disable darkmode functionality
+* **enableEditButton** -- enable or disable the "edit on Github button"
+* **enableGithubLink** -- enable or disable the link to your Github repo in the footer
+* **enableNetlifyCMS** -- enable or disable Netlify CMS (set to false by default)
 
-Many starter kits are much more ambitious than this one, which is designed to be as simple and lightweight as possible while still allowing for some more features in the future (Alpine.js), an easy path toward a more advance design if desired (Tailwind), and an easy way for non-technical users to create and edit content (Netlify CMS). 
+Now that you've got your site configured to your wishes you can move on the next step and start working with your content 👍

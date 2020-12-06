@@ -3,9 +3,9 @@ title: Markdown Examples
 date: 2020-11-20
 permalink: /markdown-examples/index.html
 eleventyNavigation:
-  order: 10
-  key: Examples 
-  parent: Learning Markdown
+  order: 55 
+  key: Markdown examples 
+  parent: Spacebook markdown
 ---
 This page shows the available Markdown-it formatters available to you with examples. For a few more bits of syntax or plugins that are not covered here see the official [markdown-it demo](https://markdown-it.github.io/).
 
